@@ -1,0 +1,22 @@
+idf_component_register(
+    SRCS
+        "src/apollo_attitude.c"
+        "src/apollo_dap.c"
+        "src/apollo_display.c"
+        "src/apollo_entry.c"
+        "src/apollo_exec.c"
+        "src/apollo_guidance.c"
+        "src/apollo_interpreter.c"
+        "src/apollo_io.c"
+        "src/apollo_math.c"
+        "src/apollo_nav.c"
+        "src/apollo_orbit.c"
+        "src/apollo_rcs.c"
+        "src/apollo_tvc.c"
+        "src/apollo_vecmath.c"
+        # Note: apollo_multithread.c excluded (uses pthreads, not available on ESP32/FreeRTOS)
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        "freertos"
+)

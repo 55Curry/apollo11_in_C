@@ -1,0 +1,9 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "test_runner.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        "apollo"
+)
